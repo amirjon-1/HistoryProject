@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 180px);
+    margin: 20px;
+}
+
+#map {
+    flex: 2;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    animation: fadeIn 1.5s ease-in;
+}
+
+#info-panel {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    margin-left: 10px;
+}
+
+#point-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+#point-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#point-content img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.leaflet-overlay-pane path {
+    stroke: #666;
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+}
+
+.leaflet-marker-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.leaflet-marker-icon:hover {
+    transform: scale(1.2);
+}
+
+
+
+#intro, #interactive-map{
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
